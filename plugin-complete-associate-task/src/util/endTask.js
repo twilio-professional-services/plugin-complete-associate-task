@@ -9,8 +9,7 @@ class EndTaskUtil {
       reservationSid,
       taskSid
     );
-    const fetchUrl = "https://completetask-5247.twil.io/completeTask";
-    console.log("fetch URL is" + fetchUrl);
+    const fetchUrl = "https://completeassociatetask-6532-prod.twil.io/";
 
     const fetchBody = {
       reservationSid,
