@@ -9,19 +9,17 @@ class EndTaskUtil {
       reservationSid,
       taskSid
     );
-    const fetchUrl = `${process.env.REACT_APP_SERVICE_BASE_URL}/completeTask`;
+    const fetchUrl = "https://completetask-5247.twil.io/completeTask";
     console.log("fetch URL is" + fetchUrl);
 
     const fetchBody = {
-      Token: manager.store.getState().flex.session.ssoTokenPayload.token,
+      reservationSid,
       taskSid,
     };
+
     const fetchOptions = {
       method: "POST",
-      body: {
-        reservationSid,
-        taskSid,
-      },
+      body: new URLSearchParams(fetchBody),
       headers: {
         "Content-Type": "application/x-www-form-urlencoded;charset=UTF-8",
       },
@@ -30,11 +28,11 @@ class EndTaskUtil {
     let response;
     try {
       const endTaskResponse = await fetch(fetchUrl, fetchOptions);
-      response = await endTaskResponse.json();
+      console.log("start fetching");
+      console.log("response is" + endTaskResponse);
     } catch (error) {
       console.error(`Error end task for call SID ${taskSid}.`, error);
     }
-
     return response;
   };
 }
