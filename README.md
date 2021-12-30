@@ -1,6 +1,6 @@
 # plugin-complete-associate-task
 
-# Queue Filter for Real-Time Queues View
+# Supervisor complete wrapping task for the agent
 
 This Flex Plugin allows supervisor to close out the tasks that are in wrapping state. 
 
