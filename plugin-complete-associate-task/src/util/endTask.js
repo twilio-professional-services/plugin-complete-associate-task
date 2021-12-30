@@ -9,7 +9,7 @@ class EndTaskUtil {
       reservationSid,
       taskSid
     );
-    const fetchUrl = "https://completeassociatetask-6532-prod.twil.io/";
+    const fetchUrl = "https://completetask-5247.twil.io/completeTask";
 
     const fetchBody = {
       reservationSid,
@@ -27,8 +27,6 @@ class EndTaskUtil {
     let response;
     try {
       const endTaskResponse = await fetch(fetchUrl, fetchOptions);
-      console.log("start fetching");
-      console.log("response is" + endTaskResponse);
     } catch (error) {
       console.error(`Error end task for call SID ${taskSid}.`, error);
     }
