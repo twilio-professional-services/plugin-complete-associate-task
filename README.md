@@ -26,15 +26,13 @@ This Flex Plugin allows supervisor to close out the tasks that are in wrapping s
 2. Rename the example app configuration file.
 3. Install dependencies.
 
-```bash
 npm install
-```
+
 
 4. Run the application.
 
-```bash
-npm start
-```
+twilio flex:plugins:start 
+
 
 5. Navigate to [http://localhost:3000](http://localhost:3000).
 
@@ -46,25 +44,11 @@ When you make changes to your code, the browser window will be automatically ref
 
 When you are ready to deploy your plugin, in your terminal run:
 
-```bash
-npm run deploy
-```
+twilio flex:plugins:deploy
 
 This will publish your plugin as a Private Asset that is accessible by the Functions & Assets API.
 
----
 
-## Changelog
-
-### 1.1
-
-**September 24, 2020**
-
-- Added a test suite, github actions and prettier.
-
-### 1.0
-
-**September 10, 2020**
 
 - Added README.
 
