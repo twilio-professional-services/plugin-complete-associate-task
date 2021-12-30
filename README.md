@@ -9,8 +9,6 @@ This Flex Plugin allows supervisor to close out the tasks that are in wrapping s
 
 - An active Twilio account. [Sign up](https://www.twilio.com/try-twilio) if you don't already have one.
 
-- Real-time Queues View enabled. The feature can be activated via Twilio Console Admin -> Pre-release Features -> REAL-TIME QUEUES VIEW.
-
 - Make sure you have [Node.js](https://nodejs.org) as well as [`npm`](https://npmjs.com) installed.
 
 
