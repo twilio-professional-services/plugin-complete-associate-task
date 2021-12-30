@@ -3,9 +3,6 @@
 This Flex Plugin allows supervisor to close out the tasks that are in wrapping state. 
 
 
-
----
-
 ## Setup
 
 ### Requirements
@@ -16,7 +13,6 @@ This Flex Plugin allows supervisor to close out the tasks that are in wrapping s
 
 - Make sure you have [Node.js](https://nodejs.org) as well as [`npm`](https://npmjs.com) installed.
 
----
 
 ## Local development
 
@@ -36,7 +32,6 @@ twilio flex:plugins:start
 
 When you make changes to your code, the browser window will be automatically refreshed.
 
----
 
 ## Deploy
 
