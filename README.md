@@ -56,7 +56,7 @@ Build SID:
 View Live Logs:
    Open the Twilio Console
 Functions:
-   [protected] https://foobar-xxx-dev.twilio.io/getTeamMembers
+   [protected] https://foobar-xxx-dev.twilio.io/completeTasks
 Assets:
 The value we're looking for comes after Domain: – that's your Runtime Domain.
 
