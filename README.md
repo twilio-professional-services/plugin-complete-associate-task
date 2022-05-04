@@ -1,15 +1,20 @@
-# Supervisors complete wrapping task for the agent
+# Flex Complete Associate Task Plugin
 
-This Flex Plugin allows supervisor to close out the tasks that are in wrapping state. 
+This Flex Plugin allows supervisors to close out the tasks that are in wrapping state by clicking a button on the supervisor view. 
 
 
 ## Setup
 
-### Requirements
+### Prerequisite
 
-- An active Twilio account. [Sign up](https://www.twilio.com/try-twilio) if you don't already have one.
+Prerequisites
+Before beginning with this Flex plugin, you'll want to make sure that:
 
-- Make sure you have [Node.js](https://nodejs.org) as well as [`npm`](https://npmjs.com) installed.
+You have a working Twilio Flex account
+You have Node.js as well as npm installed
+npm generally gets installed along with Node.js, but make sure you have it anyway
+You have the latest Twilio CLI installed
+Your Twilio CLI is running the latest Serverless Plugin
 
 
 ## Local development
