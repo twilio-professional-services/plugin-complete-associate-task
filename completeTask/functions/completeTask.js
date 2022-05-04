@@ -1,5 +1,4 @@
 exports.handler = async function (context, event, callback) {
-  const workspaceSID = "WS3e5541ad06ebbe08ad32f2e8c0dcae92";
   const reservationSid = event.reservationSid;
   const taskSid = event.taskSid;
   console.log("reserverastion sid is" + reservationSid);
@@ -13,7 +12,7 @@ exports.handler = async function (context, event, callback) {
   response.appendHeader("Access-Control-Allow-Headers", "Content-Type");
 
   client.taskrouter
-    .workspaces(workspaceSID)
+    .workspaces(context.TWILIO_WORKSPACE_SID)
     .tasks(taskSid)
     .reservations(reservationSid)
     .update({ reservationStatus: "completed" })
