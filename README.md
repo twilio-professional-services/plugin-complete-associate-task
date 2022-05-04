@@ -63,12 +63,12 @@ The value we're looking for comes after Domain: – that's your Runtime Domain.
 config.js
 Now open src/config.js in your text editor. Notice the runtime domain set to a default value? Let's change that:
 
-# Before:
+Before:
 export default {
     runtimeDomain: "http://localhost:3000"
 }
 
-# After:
+After:
 export default {
     runtimeDomain: "https://foobar-xxx-dev.twilio.io"
 }
