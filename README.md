@@ -96,9 +96,9 @@ Once everything gets deployed, your response should look something like this:
 
 ```bash
 Deployment Details
-Domain: foobar-xxx-dev.twilio.io
+Domain: complete-agent-task-xxx-dev.twilio.io
 Service:
-   custom-transfer-directory (ZS...)
+   complete-agent-task (ZS...)
 Environment:
    dev (ZE...)
 Build SID:
@@ -106,7 +106,7 @@ Build SID:
 View Live Logs:
    Open the Twilio Console
 Functions:
-   [protected] https://foobar-xxx-dev.twilio.io/getTeamMembers
+   [protected] https://complete-agent-task-xxx-dev.twilio.io/getTeamMembers
 Assets:
 ```
 
