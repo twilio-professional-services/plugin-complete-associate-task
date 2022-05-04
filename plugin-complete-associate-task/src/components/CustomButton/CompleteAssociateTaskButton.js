@@ -21,6 +21,7 @@ class CompleteAssociateTaskButton extends React.PureComponent {
           className="Twilio-Complete-AssociateTaskButton"
           disabled={null}
           onClick={this.handleClick}
+          // eslint-disable-next-line react/prop-types
           themeOverride={this.props.theme.WorkerSkills.CancelButton}
           roundCorners={false}
           data-tip

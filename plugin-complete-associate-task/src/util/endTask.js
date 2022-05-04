@@ -26,7 +26,7 @@ class EndTaskUtil {
 
     let response;
     try {
-      const endTaskResponse = await fetch(fetchUrl, fetchOptions);
+      response = await fetch(fetchUrl, fetchOptions);
     } catch (error) {
       console.error(`Error end task for call SID ${taskSid}.`, error);
     }
