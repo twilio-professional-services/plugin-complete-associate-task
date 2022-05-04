@@ -26,12 +26,11 @@ mv serverless/.env.example serverless/.env
 vim serverless/.env
 Now, just like before, replace the temporary strings with your actual values
 
-# Before
+Before
 ACCOUNT_SID=accountSid
 AUTH_TOKEN=authToken
 
-
-# After
+After
 ACCOUNT_SID=AC...
 AUTH_TOKEN=blah...
 
