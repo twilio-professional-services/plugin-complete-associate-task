@@ -9,7 +9,7 @@ class EndTaskUtil {
       reservationSid,
       taskSid
     );
-    const fetchUrl = "https://completetask-5247.twil.io/completeTask";
+    const fetchUrl = `${process.env.FLEX_APP_FUNCTIONS_BASE}/completeTask`;
 
     const fetchBody = {
       reservationSid,

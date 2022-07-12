@@ -48,35 +48,23 @@ mv public/appConfig.example.js public/appConfig.js
 vim public/appConfig.js
 ```
 
-You'll notice that this file has a temporary string variable for your Account Sid. Replace that string with your actual value.
 
-```javascript
-# Before:
-var accountSid = 'accountSid';
-
-# After
-var accountSid = 'AC...';
-```
-#### serverless/.env
+#### functions/.env
 Next, we'll need to configure the environment variables for the Twilio Functions. Start by renaming the environment file to remove `.example` and opening it with your editor:
 
 ```bash
-mv serverless/.env.example serverless/.env
+mv functions/.env.example functions/.env
 
-vim serverless/.env
+vim functions/.env
 ```
 
 Now, just like before, replace the temporary strings with your actual values
 
 ```
 # Before
-ACCOUNT_SID=accountSid
-AUTH_TOKEN=authToken
 TWILIO_WORKSPACE_SID=workspaceSid
 
 # After
-ACCOUNT_SID=AC...
-AUTH_TOKEN=blah...
 TWILIO_WORKSPACE_SID=WS...
 ```
 
@@ -89,7 +77,7 @@ First off, make sure that you have authenticated according to the [Twilio CLI do
 Then cd into the Functions directory and deploy them:
 
 ```bash
-cd src/Functions
+cd src/functions
 twilio serverless:deploy
 ```
 
@@ -117,11 +105,21 @@ The value we're looking for comes after `Domain:` – that's your Runtime Domain
 ## Local development
 
 1. Clone this repository.
-2. Rename the example app configuration file.
+2. Create the plugin config file by copying `.env.example` to `.env`.
+
+```bash
+cd plugin-complete-associate-task
+cp .env.example .env
+```
+
+Edit `.env` and set the `FLEX_APP_FUNCTIONS_BASE` variable to your Twilio Functions base URL (like https://complete-agent-task-xxx-dev.twilio.io). 
+
+
 3. Install dependencies.
 
+```bash
 npm install
-
+```
 
 4. Run the application.
 
