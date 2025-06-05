@@ -1,5 +1,12 @@
 # Flex Complete Associate Task Plugin
 
+> [!IMPORTANT]  
+> This is now available in the [Flex Plugin Library](https://www.twilio.com/docs/flex/developer/plugins/plugin-library). You may now install it one of the following ways:
+> - Via the plugin library by navigating to Flex UI > Admin > Plugins and selecting "Supervisor Complete Reservation"
+> - Via the [Flex Project Template](https://github.com/twilio-professional-services/flex-project-template), which allows you to orchestrate deployment of your entire Flex solution
+>
+> This repository is now redundant and has been archived.
+
 This Flex Plugin allows supervisors to close out the tasks that are in wrapping state by clicking a button on the supervisor view. 
 
 ![Supervisor View Screenshot](./Screen%20Shot%202022-05-04%20at%203.32.33%20PM.png)
