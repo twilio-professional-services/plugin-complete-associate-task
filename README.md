@@ -2,7 +2,7 @@
 
 This Flex Plugin allows supervisors to close out the tasks that are in wrapping state by clicking a button on the supervisor view. 
 
-<img src="https://github.com/khu-twilio/plugin-complete-associate-task/blob/main/Screen%20Shot%202022-05-04%20at%203.32.33%20PM.png" width="350"> 
+![Supervisor View Screenshot](./Screen%20Shot%202022-05-04%20at%203.32.33%20PM.png)
 
 ## Setup
 
